@@ -35,3 +35,7 @@ How to write your own `tail` command using NodeJs
    ```bash
    node approach2.js large_file.csv 10 -f
    ```
+
+   ```bash
+   node approach3.js
+   ```

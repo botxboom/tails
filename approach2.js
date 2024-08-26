@@ -48,11 +48,4 @@ if (!filePath) {
   process.exit(1);
 }
 
-const start = performance.now();
-
 tail(filePath, numLinesToDisplay, follow);
-
-const end = performance.now();
-const duration = end - start;
-
-console.log(`time take: ${(duration / 1000).toFixed(3)} milliseconds`);

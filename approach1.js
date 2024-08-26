@@ -18,11 +18,4 @@ function tail(filePath, numLines = 10) {
 const filePath = "./large_file.csv"; // Replace with your file path
 const numLinesToDisplay = 50; // Number of lines to display, similar to `tail -n`
 
-const start = performance.now();
-
 tail(filePath, numLinesToDisplay);
-
-const end = performance.now();
-const duration = end - start;
-
-console.log(`time take: ${(duration / 1000).toFixed(3)} milliseconds`);
